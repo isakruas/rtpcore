@@ -1,0 +1,31 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'rtp'
+description = 'Ripta Transfer Protocol'
+readme = 'README.md'
+keywords = []
+license = {text = 'MIT'}
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.10',
+    'Topic :: Internet :: WWW/HTTP',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    'Topic :: Software Development :: Libraries :: Application Frameworks',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+]
+dependencies = ['click']
+version = '0.0.1.dev0'
+
+[project.scripts]
+rtp = "rtp.main:main"
+
+[tool.setuptools]
+py-modules = ['rtp']
